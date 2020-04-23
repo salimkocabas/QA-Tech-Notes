@@ -1,0 +1,16 @@
+bazi durumlarda value degisken olabilir, icerdigi degere gore arama yapabiliriz - bazi durumlarda cok uzunsa da kullanilabilir -
+Buna Reular expression diyoruz
+
+regular expressiong usage rule:
+xpath	: //tagName[contains(@attiribute,'value')]
+CSS		:   tagname[attribute*='value]
+
+
+sample:
+html code : <input name="username123"   //123 degeri degistigini varsayalim
+
+xPath:
+	//input[contains(@name,'username')]
+
+CSS:
+	input[name*='username']

@@ -1,0 +1,63 @@
+
+Child or subchild
+	XPath	: //div//a
+	CSS		: div a
+
+
+Id
+	XPath	: //div[@id='example']
+	CSS		: #example
+
+
+Class
+	XPath	: //div[@class='example']
+	CSS		: .example
+
+Next sibling
+	XPATH	: //input[@id='username']/following-sibling::input[1]
+	CSS		: #username + input
+
+Attribute values
+	XPATH: //input[@name='username']
+	CSS: input[name='username']
+
+
+Choosing a specific match
+	CSS selectors in Selenium allow us to navigate lists 
+	with more finess that the above methods. 
+	If we have a ul and we want to 
+	select its fourth li element without 
+	regard to any other elements, 
+	we should use nth-child or nth-of-type	
+	
+Sample HTML
+	<ul id = "recordlist">
+	<li>Cat</li>
+	<li>Dog</li>
+	<li>Car</li>
+	<li>Goat</li>
+	</ul>
+	
+	CSS: #recordlist li:nth-of-type(4)
+	CSS: #recordlist li:nth-child(4)
+	CSS: #recordlist *:nth-child(4)
+	
+Sub-string matches
+^= Match a prefix  		: CSS: a[id^='id_prefix_']
+$= Match a suffix		: CSS: a[id$='_id_sufix']
+*= Match a substring	: CSS: a[id*='id_pattern']
+
+Matching by inner text
+CSS: a:contains('Log Out')
+
+Source:
+https://saucelabs.com/resources/articles/selenium-tips-css-selectors
+
+
+
+	
+	
+	
+	
+	
+	

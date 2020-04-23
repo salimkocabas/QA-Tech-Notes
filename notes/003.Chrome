@@ -1,0 +1,19 @@
+:Console Command
+	$ (<console command>)
+	$x(<xpath command>)
+
+
+:Search Box
+	//*					: Show everything on that page
+	//*[@type='email']	: Shows type=email all pages
+	
+	
+	//input[@type='email']	: accept only input tags than find email
+	
+	
+	
+xPath Syntax:
+//tagName[@attribute='value']
+
+CSS Syntax:
+tagName[attribute='value']

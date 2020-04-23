@@ -1,0 +1,5 @@
+Search area:
+-------------------
+CSS		: input[name="q"]
+xPATH	: //input[@name='q']
+

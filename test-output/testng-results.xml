@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="LoginTest" duration-ms="144" started-at="2020-03-17T22:24:10 EDT" finished-at="2020-03-17T22:24:10 EDT">
+    <groups>
+    </groups>
+    <test name="Chrome" duration-ms="144" started-at="2020-03-17T22:24:10 EDT" finished-at="2020-03-17T22:24:10 EDT">
+      <class name="com.testng6.DataProvider.LoginTest">
+        <test-method status="PASS" signature="startDriver(java.lang.String, java.lang.String)[pri:0, instance:com.testng6.DataProvider.LoginTest@365c30cc]" name="startDriver" is-config="true" duration-ms="41" started-at="2020-03-17T22:24:10 EDT" finished-at="2020-03-17T22:24:10 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[www.google.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="Login(java.lang.String, java.lang.String)[pri:0, instance:com.testng6.DataProvider.LoginTest@365c30cc]" name="Login" duration-ms="10" started-at="2020-03-17T22:24:10 EDT" data-provider="getData" finished-at="2020-03-17T22:24:10 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[angel]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[correctPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="Login(java.lang.String, java.lang.String)[pri:0, instance:com.testng6.DataProvider.LoginTest@365c30cc]" name="Login" duration-ms="0" started-at="2020-03-17T22:24:10 EDT" data-provider="getData" finished-at="2020-03-17T22:24:10 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[angel]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="Login(java.lang.String, java.lang.String)[pri:0, instance:com.testng6.DataProvider.LoginTest@365c30cc]" name="Login" duration-ms="0" started-at="2020-03-17T22:24:10 EDT" data-provider="getData" finished-at="2020-03-17T22:24:10 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[angel]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="Login(java.lang.String, java.lang.String)[pri:0, instance:com.testng6.DataProvider.LoginTest@365c30cc]" name="Login" duration-ms="2" started-at="2020-03-17T22:24:10 EDT" data-provider="getData" finished-at="2020-03-17T22:24:10 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.testng6.DataProvider.LoginTest@365c30cc]" name="closeDriver" is-config="true" duration-ms="0" started-at="2020-03-17T22:24:10 EDT" finished-at="2020-03-17T22:24:10 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- com.testng6.DataProvider.LoginTest -->
+    </test> <!-- Chrome -->
+  </suite> <!-- LoginTest -->
+</testng-results>

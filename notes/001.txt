@@ -1,0 +1,37 @@
+Basic Web Driver methods:
+
+getCurentURl()		Get a string representing the current URL that the browser is looking at.
+getTitle()			The title of the current page
+getPageSource()		Get the source of the last loaded page.
+Quit()				Quits this driver, closing every associated window.
+Close()				Close the current window, quitting the browser if it's the last window currently open.
+
+******************
+Locater Techniques & Tools used to identity WebObjects
+
+- ID
+- Name
+- ClassName
+- LinkText
+- Xpath
+- CSS
+
+ID:
+Facebook html code: <input type="email" class="inputtext login_form_input_box" name="email" id="email" data-testid="royal_email">
+
+driver.findElement(By.id("email")) 										: it finds id='email'
+driver.findElement(By.id("email")).sendKeys("mail_address@gmail.com")	: ir send text to email field after found
+Every element doesn't have id or name
+
+Name		: Smilar to ID
+ClassName	: Smilar to ID
+But class name does not accept if the string has <spaces>
+LinkText	: Smilar to ID
+
+
+Chrome Console:
+css				: $("#cssobject")    	
+xpath			: $x("//*[@id='forgot_password_link']")
+
+
+

@@ -1,0 +1,27 @@
+Facebook username and password field
+=====================================
+<input type="email" class="inputtext login_form_input_box" name="email" id="email" data-testid="royal_email">
+
+input			= TagName
+
+Attributes		: class  /  Value			: inputtext
+
+name = attribute	- value=email
+
+xpath :
+//tagName[@attribute='email']
+//input[@type='email']
+
+driver.findElement(By.xpath("id('email')"))
+
+
+Facebook Login Button
+=====================================
+<input value="Log In" aria-label="Log In" data-testid="royal_login_button" type="submit" id="u_0_b">
+
+xpath: (login button)
+//input[@value='Log In']
+
+
+
+

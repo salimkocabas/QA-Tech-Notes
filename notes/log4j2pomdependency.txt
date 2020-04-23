@@ -1,0 +1,18 @@
+if you dont want do download regular jar file to Eclipse that our'lk
+
+
+<dependency> 
+    <groupId>org.apache.logging.log4j</groupId> 
+    <artifactId>log4j-api</artifactId> 
+    <version>2.11.1</version> 
+</dependency> 
+<dependency> 
+    <groupId>org.apache.logging.log4j</groupId> 
+    <artifactId>log4j-core</artifactId> 
+    <version>2.11.1</version> 
+    </dependency> 
+<dependency> 
+    <groupId>org.apache.logging.log4j</groupId> 
+    <artifactId>log4j-slf4j-impl</artifactId> 
+    <version>2.11.1</version> 
+</dependency>

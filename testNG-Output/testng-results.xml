@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="18494" started-at="2020-04-21T01:33:12 EDT" finished-at="2020-04-21T01:33:30 EDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="18494" started-at="2020-04-21T01:33:12 EDT" finished-at="2020-04-21T01:33:30 EDT">
+      <class name="com.practice.silentWebDriver.SilentChrome">
+        <test-method status="PASS" signature="driverTest()[pri:0, instance:com.practice.silentWebDriver.SilentChrome@33cb5951]" name="driverTest" duration-ms="18402" started-at="2020-04-21T01:33:12 EDT" finished-at="2020-04-21T01:33:30 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverTest -->
+      </class> <!-- com.practice.silentWebDriver.SilentChrome -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

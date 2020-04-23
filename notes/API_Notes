@@ -1,0 +1,76 @@
+API - Application Programming inteface
+API - is a method of communication between two systemsCreate - creating data/resource- creating a user- jhon doe - createUser();
+Retrieve - retrieve data/resource - existing data or the user we created - jhon doe - getUser();
+Update - update the data/resource - updating existing users - jhon doe - updateUser();
+Delete - deleting data/resource - existing users- jon doe - deleteUser();Create - POST call
+Retrieve - GET call
+Update - UPDATE/PUT call
+Delete - DELETE callPOST call - creating data
+URI - Uniform Resource Identifier
+URL - Uniform Resource LocatorURI --> Domain URL/Base URL + service URL/resource
+Domain URL/Base URL - http://www.abc.com
+service URL/resource - /createUser
+URI --> http://www.abc.com/createUser2nd thing we need is - Payload/body
+{ “name” : “Jon”,
+ “password” : “abc12345";
+ “last name” : “doe”;,
+ “email” : “jon@gmail”}XML:<name>Jon</name>
+<Password>abc12345</Password>
+<Lastname>doe</lastname>
+<email>jon@gmail</email>String - text“name jon password abc12345 lastname doe email jon@gmail”Headers:
+very important, we specify what type of request we are sending, authentication
+content-type - application/json
+content-type - application/xml
+content-type - application/text/string
+Authentication:
+Authentication key : !@#$assdfse2342353
+Authentication token : #3245@##skjfsdfsome dont require authenticationGET CALL1. URI
+2. http://www.abc.com/getUsers
+http://www.abc.com/getUser/jhon
+http://www.abc.com/getUsers/?firstname=Jhon
+http://www.abc.com/getUsers/?firstname=Jhon&lastname=doe
+http://www.abc.com/getUsers
+3. headersPUT CALL
+1. URI
+2. Payload/body
+3. headers
+http://www.abc.com/getUser/jhon{ “name” : “Jon”,
+ “password” : “abc6789”,
+ “last name” : “doe”,
+ “email” : “jon@gmail”}{ “update” : “successful”}{ “created” : “successful”}DELETE CALL:
+1. URI
+2. Payload - YES/NOhttp://www.abc.com/deleteUser/jhon?lastname=doe
+
+
+*********** CLASS 2 ****************
+http://abc.com/getUser?first?name=john
+
+Domain URL/base				: http://abc.com
+Service URL/RESTendpoing/resource	: /getuser
+Jquery parameter			: firs_name=john
+
+W3C consortium
+
+JSON:
+
+{
+	"name" : "John",
+	"email": "john@gmail.com"
+}
+
+What type of tools are there to test web services?
+- Postman
+- SOAPUI
+- Rest assured
+- SoapUING pro - integrated with ReadyAPI
+
+
+
+
+
+
+
+
+	
+	
+	

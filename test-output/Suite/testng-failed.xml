@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="URL" value="www.google.com"/>
+  <test thread-count="5" name="run(failed)">
+    <parameter name="URL" value="www.facebook.com"/>
+    <classes>
+      <class name="com.testng5.XMLparametes.testNgParameters2">
+        <methods>
+          <include name="gotoWebPage" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.testng5.XMLparametes.testNgParameters2 -->
+    </classes>
+  </test> <!-- run(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,36 @@
+listeyi full yazdırmak için
+
+-- full list
+select *
+from hr.employees e join hr.employees m
+on e.MANAGER_ID=m.EMPLOYEE_ID
+
+-- only if manager 100
+select *
+from hr.employees e join hr.employees m
+on e.MANAGER_ID=m.EMPLOYEE_ID
+where e.MANAGER_ID=100;
+
+
+ya da sadece bazi bilgileri yazdiracaksak onları tanimlamak gerekiyor.
+
+select e.EMPLOYEE_ID,e.FIRST_NAME,e.LAST_NAME, e.MANAGER_ID, m.FIRST_NAME MANAGER_FIRST_NAME,m.LAST_NAME MANAGER_LAST_NAME
+from hr.employees e join hr.employees m
+on e.MANAGER_ID=m.EMPLOYEE_ID
+where e.MANAGER_ID=100;
+
+
+-- yeni bir tablo create ederek
+
+create table managers as 
+select EMPLOYEE_ID, FIRST_NAME,LAST_NAME 
+from hr.employees
+
+select e.EMPLOYEE_ID,e.FIRST_NAME,e.LAST_NAME,MANAGER_ID, m.FIRST_NAME MANAGER_FIRST_NAME,m.LAST_NAME MANAGER_LAST_NAME 
+from hr.employees e join managers m 
+on e.MANAGER_ID=m.EMPLOYEE_ID 
+where MANAGER_ID=100
+
+
+
+

@@ -1,0 +1,102 @@
+**************************
+* XPath Path Expressions *
+**************************
+
+Absolute xpath:
+*************************************************************
+html/body/div[1]/section/div[1]/div/div/div/div[1]/div/div/div/div/div[3]/div[1]/div/h4[1]/b
+
+
+Relative xpath:
+**************************************************************
+Relative xpath: //*[@class='featured-box']//*[text()='Testing']
+
+				driver.findElement(By.xpath("id('email')"))
+
+
+
+
+1)BASIC:
+************************************************************
+usage:
+//tagname[@attributes='value']
+
+
+Xpath=//input[@type='text']				
+Xpath=//label[@id='message23']
+Xpath=//input[@value='RESET']
+Xpath=//*[@class='barone']
+Xpath=//a[@href='http://demo.guru99.com/']
+Xpath=//img[@src='//cdn.guru99.com/images/home/java.png']
+
+
+
+2)CONTAINS()
+************************************************************
+usage:
+//tagName[contains(@attiribute,'value')]
+
+Xpath=//*[contains(@type,'sub')]
+Xpath=//*[contains(@name,'btn')] 
+Xpath=//*[contains(text(),'here')]
+
+3) Using OR & AND:
+*************************************************************
+Xpath=//*[@type='submit' or @name='btnReset']
+
+
+4) Starts-with function:
+*************************************************************
+Xpath=//label[starts-with(@id,'message')]
+
+5) Text():
+*************************************************************
+Xpath=//td[text()='UserID']
+
+
+6) XPath axes methods:
+*************************************************************
+a) Following:	
+	Xpath=//*[@type='text']//following::input
+	Xpath=//*[@type='text']//following::input[1]
+	
+b) Ancestor:
+	Xpath=//*[text()='Enterprise Testing']//ancestor::div
+	Xpath=//*[text()='Enterprise Testing']//ancestor::div[1]
+	
+c) Child:
+	Xpath=//*[@id='java_technologies']//child::li
+	Xpath=//*[@id='java_technologies']/child::li[1]
+	
+d) Preceding: (Onceki) - 
+mesela login butondan onceki iki field, username ve password alanlari tespit edilemiyorsa 
+bununla loginden onceki iki alan tespit edilebilir
+
+	Xpath=//*[@type='submit']//preceding::input
+	Xpath=//*[@type='submit']//preceding::input[1]
+	
+e) Following-sibling: (yanindaki kardes element)
+	xpath=//*[@type='submit']//following-sibling::input
+	
+
+f) Parent:
+	Xpath=//*[@id='rt-feature']//parent::div[1]
+	
+	
+g) Self:
+	Xpath =//*[@type='password']//self::input
+	
+	
+	
+h) Descendant: (torun)
+	Xpath=//*[@id='rt-feature']//descendant::a
+	Xpath=//*[@id='rt-feature']//descendant::a[1]   : if there is more than one we dive into others
+	
+	
+
+
+		
+	
+
+	
+
